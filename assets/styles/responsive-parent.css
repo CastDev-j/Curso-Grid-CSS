@@ -1,0 +1,32 @@
+:root{
+    --pastel-blue: #AED9E0;
+    --pastel-green: #A9D6A9;
+    --pastel-yellow: #F1E1A6;
+    --pastel-orange: #F7B267;
+    --pastel-red: #F79D84;
+    --pastel-pink: #F7A9A8;
+    --pastel-purple: #D4A5A5;
+    --pastel-brown: #D4A5A5;
+    --pastel-grey: #D4A5A5;
+    --pastel-white: #F7F7F7;
+    --pastel-black: #333333;
+}
+
+.responsive-parent{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+    gap: 2rem 1rem;
+
+    padding: 1rem;
+
+    background-color: var(--pastel-orange);
+
+    & .responsive-child{
+        min-height: 100px;
+        background-color: var(--pastel-white);
+        padding: 1rem;
+        border-radius: 5px;
+    }
+}
+

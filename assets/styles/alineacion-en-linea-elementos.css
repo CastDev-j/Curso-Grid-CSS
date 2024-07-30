@@ -1,0 +1,70 @@
+:root{
+    --pastel-blue: #AED9E0;
+    --pastel-green: #A9D6A9;
+    --pastel-yellow: #F1E1A6;
+    --pastel-orange: #F7B267;
+    --pastel-red: #F79D84;
+    --pastel-pink: #F7A9A8;
+    --pastel-purple: #D4A5A5;
+    --pastel-brown: #D4A5A5;
+    --pastel-grey: #D4A5A5;
+    --pastel-white: #F7F7F7;
+    --pastel-black: #333333;
+}
+
+.alineacion-en-linea-elementos{
+    justify-self: center;
+
+    display: grid;
+    grid-auto-rows: 50px 50px 50px;
+    grid-template-columns: repeat(3, 50px);
+
+    justify-items: stretch;
+    align-items: stretch; 
+
+    /* justify-content: center;
+    align-content: center; */
+    place-content: center;
+
+    height: 390px;
+    width: 250px;
+
+    border-radius: 10px;
+
+    gap: 1rem;
+    padding: 1rem;
+
+    background-color: var(--pastel-black);
+
+    & button, p{
+        background-color: var(--pastel-white);
+        padding: .5rem;
+        border-radius: 5px;
+        cursor: pointer;
+
+        transition: background-color .3s ease;
+    }
+
+    & p {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        overflow: hidden;
+
+    }
+
+    & button:hover{
+        background-color: var(--pastel-blue);
+    }
+
+    & .grid-text{
+        grid-column: 1 / 4;
+    }
+
+    & .grid-0{
+        grid-column: 1 / 3;
+    }
+
+
+}

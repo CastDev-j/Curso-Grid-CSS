@@ -1,0 +1,39 @@
+/* Pastel colores palette */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('./header.css');
+@import url('./parent.css');
+@import url('./responsive-parent.css');
+@import url('./bento-grids.css');
+@import url('./layout-tipico.css');
+@import url('./alineacion-en-linea-elementos.css');
+
+:root{
+    --pastel-blue: #AED9E0;
+    --pastel-green: #A9D6A9;
+    --pastel-yellow: #F1E1A6;
+    --pastel-orange: #F7B267;
+    --pastel-red: #F79D84;
+    --pastel-pink: #F7A9A8;
+    --pastel-purple: #D4A5A5;
+    --pastel-brown: #D4A5A5;
+    --pastel-grey: #D4A5A5;
+    --pastel-white: #F7F7F7;
+    --pastel-black: #333333;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--pastel-white);
+    color: var(--pastel-black);
+    grid-template-columns: 1fr;
+    gap: 2rem 0;
+
+}
+
